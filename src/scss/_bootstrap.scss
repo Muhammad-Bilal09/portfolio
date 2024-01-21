@@ -1,0 +1,123 @@
+@import"../../node_modules/bootstrap/scss/bootstrap.scss";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+ 
+}
+body{
+background-image: url(../Assets/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+// background-size: cover;
+background-image: fixed;
+background-size: cover;
+min-height: 100vh;
+.kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+}
+position: relative;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+body::after{
+    content: '';
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.tag{
+    font-size: 4rem;
+}
+main{
+    flex: 1 0 auto;
+}
+
+li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+li a::after{
+    content:""; 
+   position: absolute;
+//    bottom:-4px ;
+   width:  0% ;
+   background-color: skyblue;
+   height: 3px;
+  left: 0;
+  bottom: 2px;
+//   transition: 0.5s;
+}
+li a:hover::after {
+    color: skyblue;
+    width : 100%;
+    transition: width 0.3s linear;
+}
+// .nav-link{
+//     position: absolute;
+
+// }
+.nav-link:hover{
+color: skyblue !important;
+transform: scale(1.15);
+}
+.nav-link{
+transition: all 0.2s;
+position: relative;
+}
+.btn{
+    transition: all 0.2s;
+    position: relative;
+}
+.btn:hover{
+    transform: scale(1.15);
+}
+#search_input{
+    border-radius: 6px;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+
+.skillcard{
+    // display: flex;
+    margin: 5%;
+    display: grid;
+width: fit-content;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+// grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 20px;
+}
+.card{
+    box-shadow: 14px -11px 28px 6px rgba(13,13,255,0.8);
+    -webkit-box-shadow: 14px -11px 28px 6px rgba(13,13,255,0.8);
+    -moz-box-shadow: 14px -11px 28px 6px rgba(13,13,255,0.8);
+}
+
+.progress1{
+    color: white;
+    margin: 5%;
+ align-content: center;
+}
+button{
+    a{
+        text-decoration: none;
+    }
+}
+

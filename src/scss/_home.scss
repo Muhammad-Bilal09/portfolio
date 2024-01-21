@@ -1,0 +1,31 @@
+// .home{
+//     display: flex;
+//     justify-content: center;
+//     float: left;
+// align-items: center;
+// min-height: 70vh;
+// }
+// .img{
+//     background-image: none;
+// border-radius:33% 67% 54% 46% / 30% 30% 70% 70%  ;
+// }
+.links{
+    list-style: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+// .home{
+//         display: grid;
+//         grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+//         grid-template-rows: 1fr;
+//         row-gap: 0px;
+//         column-gap: 0px;
+// }
+.hometext{
+    margin-top: 10%;
+}
